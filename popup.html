@@ -1,0 +1,39 @@
+<!DOCTYPE html >
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Tailwindcss CDN here -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    
+
+
+
+    <!-- Open the modal using ID.showModal() method -->
+<button class="btn" onclick="my_modal_5.showModal()">open modal</button>
+<dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+  <div class="modal-box">
+    <h3 class="flex justify-center font-bold text-5xl">Congrates!</h3>
+    <img class="mx-auto mt-4" src="./images/coin.png" alt="">
+    <p class="pt-7 flex justify-center">you Have Donated for Humankind</p>
+    <p class="flex justify-center font-semibold ">Successfully</p>
+    <div class="modal-action justify-center">
+      <form method="dialog">
+        <!-- if there is a button in form, it will close the modal -->
+        <button class="btn">close confirmation</button>
+      </form>
+    </div>
+  </div>
+</dialog>
+
+</body>
+</html>

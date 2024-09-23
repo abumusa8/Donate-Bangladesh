@@ -1,5 +1,6 @@
 function hideValue (id){
   
-    const mybtn = document.getElementById('main').add('hidden')
-    document.getElementById(id).remove('hidden')
+    const main =document.getElementById('main').classList.add('hidden')
+
+    document.getElementById(id).classList.remove('hidden')
 }

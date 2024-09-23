@@ -13,6 +13,8 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Tailwindcss CDN here -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- font wasam cdn here -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
   <header class="bg-white   shadow sticky top-0 z-50">
@@ -20,9 +22,9 @@
       <div class="flex max-sm:flex-col max-sm:space-y-5 max-sm:justify-center items-center justify-around">
         <div>
           <button class="bg-[#B4F461] font-semibold px-7 py-3 rounded-[8px]">
-           <a href="faq.html"><p> Blog</p></a>
+           <a href="index.html"><p> Home</p></a>
           </button>
-
+          
         </div>
         <div class="flex items-center space-x-2">
           <img class="w-6" src="images/logo.png" alt="" />
@@ -37,16 +39,10 @@
       </div>
     </nav>
     <!-- button related stylesh -->
-    <div class="flex justify-center mt-10 pb-9 space-x-3">
-      <button class="bg-[#B4F461] font-semibold px-7 py-3 rounded-[8px]">
-        Donation
-      </button>
-      <button id="history-btn" class="bg-[#B4F461] font-semibold px-5 py-1 rounded-[8px]">
-        History
-      </button>
-    </div>
+   
   </header>
     <section class="w-10/12 mx-auto mt-20">
+      <i class="fa-solid fa-circle-question"></i>
         <h1 class="font-bold text-4xl mb-16">important FAQ? </h1>
         <div class="collapse collapse-arrow bg-base-200">
             <input type="radio" name="my-accordion-2" checked="checked" />
@@ -79,37 +75,22 @@
 
           <div class="collapse collapse-arrow bg-base-200">
             <input type="radio" name="my-accordion-2" />
-            <div class="collapse-title text-xl font-medium">How do you select an element forom the DOM?</div>
+            <div class="collapse-title text-xl font-medium">What is event delegation in the context of the DOM. and why is it useful?</div>
             <div class="collapse-content">
-              <p>    By ID: You can select an element using its unique identifier.
+              <p>  Event delegation is a technique in the DOM where a single event listener is attached to a parent element rather than to multiple child elements. When an event occurs on a child, it bubbles up to the parent, allowing the parent to handle the event.
 
-                By Class Name: You can select elements that share the same class name.
-            
-                By Tag Name: You can select all elements of a specific type, such as all paragraphs or all divs.
-            
-                Using CSS Selectors: You can select elements using more complex queries, like selecting the first element that matches a certain class or selecting all elements that meet specific criteria.
-            
-            These methods allow you to effectively access and manipulate elements on a web page.
+                This approach is useful because it improves performance by reducing the number of event listeners, simplifies code maintenance by centralizing event handling, and easily accommodates dynamic content changes without needing to reattach listeners.
             </p>
             </div>
           </div>
           <br>
-
-
-
           <div class="collapse collapse-arrow bg-base-200">
             <input type="radio" name="my-accordion-2" />
-            <div class="collapse-title text-xl font-medium">How do you select an element forom the DOM?</div>
+            <div class="collapse-title text-xl font-medium">How do you manipulation and element's attributes and styles using the DOM</div>
             <div class="collapse-content">
-              <p>    By ID: You can select an element using its unique identifier.
+              <p> To manipulate an element's attributes using the DOM, you can use methods like `getAttribute`, `setAttribute`, and `removeAttribute`. These allow you to read, modify, or remove attributes like `id`, `class`, or custom data attributes.
 
-                By Class Name: You can select elements that share the same class name.
-            
-                By Tag Name: You can select all elements of a specific type, such as all paragraphs or all divs.
-            
-                Using CSS Selectors: You can select elements using more complex queries, like selecting the first element that matches a certain class or selecting all elements that meet specific criteria.
-            
-            These methods allow you to effectively access and manipulate elements on a web page.
+                For styling, you can directly adjust an element's CSS using the `style` property to change properties like `color`, `background`, and `font-size`. Alternatively, you can manage styles through CSS classes with methods like `classList.add`, `classList.remove`, and `classList.toggle`, which enable you to add, remove, or toggle classes for more organized styling.
             </p>
             </div>
           </div>

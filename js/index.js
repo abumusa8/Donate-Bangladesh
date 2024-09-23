@@ -78,9 +78,20 @@ document.getElementById('donait-now-btn3').addEventListener('click', function(ev
 
 //history-btn-here
 document.getElementById('history-btn').addEventListener('click', function(){
-    console.log('hidden')
-    hideValue(main)
-    const addhistory = document.createElement('div')
     
+const history =document.getElementById('history-btn')
+history.classList.add('bg-[#B4F461]' ,'font-semibold', 'px-5', 'py-1', 'rounded-[8px]')
+   const donationbtn = document.getElementById('donationbtn')
+   donationbtn.classList.remove('bg-[#B4F461]' ,'font-semibold', 'px-5', 'py-1', 'rounded-[8px]')
+   document.getElementById('main').classList.add('hidden')
+   
       
+})
+// donatin btn here
+ document.getElementById('donationbtn').addEventListener('click', function(){
+    const donationbtn = document.getElementById('donationbtn')
+   donationbtn.classList.add('bg-[#B4F461]' ,'font-semibold', 'rounded-[8px]')
+   const history =document.getElementById('history-btn')
+history.classList.remove('bg-[#B4F461]' ,'font-semibold', 'px-5', 'py-1', 'rounded-[8px]')
+document.getElementById('main').classList.remove('hidden')
 })

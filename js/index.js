@@ -20,7 +20,7 @@ document.getElementById('donait-now-btn').addEventListener('click', function(eve
 
     const historyItem =  document.createElement("div")
     const donate = 'Taka Donate for Flood at Noakhali, Bangladesh'
-    historyItem.className='bg-red border shadow h-20 mx-[200px] mt-2 p-3 rounded-xl'
+    historyItem.className='bg-red border shadow max-sm:h-40 h-20 max-sm:mx-[70px] mx-[200px] mt-2 p-3 rounded-xl'
         historyItem.innerHTML = `
             <h1 class=""></h1>
             <p class="font-bold">${inputbtn} ${donate}</p>
@@ -57,7 +57,7 @@ document.getElementById('donait-now-btn2').addEventListener('click', function(ev
       document.getElementById('main-blance').innerText =loss
       const historyItem =  document.createElement("div")
     const donate = ' Taka is Donated for Flood Relief in Feni,Bangladesh'
-    historyItem.className='bg-red border shadow h-20 mx-[200px] mt-2 p-3 rounded-xl'
+    historyItem.className='bg-red border shadow max-sm:h-40 h-20 max-sm:mx-[70px] mx-[200px] mt-2 p-3 rounded-xl'
         historyItem.innerHTML = `
             <h1 class=""></h1>
             <p class="font-bold">${inputbtn} ${donate}</p>
@@ -95,7 +95,7 @@ document.getElementById('donait-now-btn3').addEventListener('click', function(ev
 
       const historyItem =  document.createElement("div")
       const donate = ' Taka is Donated for Aid for Injured in the Quota Movement, Bangladesh'
-      historyItem.className='bg-red border shadow h-20 mx-[200px] mt-2 p-3 rounded-xl'
+      historyItem.className='bg-red border shadow max-sm:h-40 h-20 max-sm:mx-[70px] mx-[200px] mt-2 p-3 rounded-xl'
           historyItem.innerHTML = `
               <h1 class=""></h1>
               <p class="font-bold">${inputbtn} ${donate}</p>

@@ -14,11 +14,24 @@ document.getElementById('donait-now-btn').addEventListener('click', function(eve
    }
    const newblance = inputbtn+updatedonate
    const loss =mainblance-inputbtn
-      document.getElementById('update-donate').innerText= newblance
-      document.getElementById('main-blance').innerText =loss
+      document.getElementById('update-donate').innerText= newblance.toFixed(2)
+      document.getElementById('main-blance').innerText =loss.toFixed(2)
+
+
+    const historyItem =  document.createElement("div")
+    const donate = 'Taka Donate for Flood at Noakhali, Bangladesh'
+    historyItem.className='bg-red border shadow h-20 mx-[200px] mt-2 p-3 rounded-xl'
+        historyItem.innerHTML = `
+            <h1 class=""></h1>
+            <p class="font-bold">${inputbtn} ${donate}</p>
+            
+        `
+       const container = document.getElementById('history-list')
+        container.appendChild(historyItem)
+
     const modal = document.getElementById('my_modal_5');
     modal.showModal(); 
-   
+
 })
 
 
@@ -39,8 +52,18 @@ document.getElementById('donait-now-btn2').addEventListener('click', function(ev
    }
    const newblance = inputbtn+updatedonate
    const loss =mainblance-inputbtn
-      document.getElementById('update-donate2').innerText= newblance
-      document.getElementById('main-blance').innerText =loss
+      document.getElementById('update-donate2').innerText= newblance.toFixed(2)
+      document.getElementById('main-blance').innerText =loss.toFixed(2)
+      const historyItem =  document.createElement("div")
+    const donate = ' Taka is Donated for Flood Relief in Feni,Bangladesh'
+    historyItem.className='bg-red border shadow h-20 mx-[200px] mt-2 p-3 rounded-xl'
+        historyItem.innerHTML = `
+            <h1 class=""></h1>
+            <p class="font-bold">${inputbtn} ${donate}</p>
+            
+        `
+       const container = document.getElementById('history-list')
+        container.appendChild(historyItem)
       const modal = document.getElementById('my_modal_5');
     modal.showModal(); 
    
@@ -64,16 +87,30 @@ document.getElementById('donait-now-btn3').addEventListener('click', function(ev
    }
    const newblance = inputbtn+updatedonate
    const loss =mainblance-inputbtn
-      document.getElementById('update-donate3').innerText= newblance
-      document.getElementById('main-blance').innerText =loss
+      document.getElementById('update-donate3').innerText= newblance.toFixed(2)
+      document.getElementById('main-blance').innerText =loss.toFixed(2)
+
+      
+
+      const historyItem =  document.createElement("div")
+      const donate = ' Taka is Donated for Aid for Injured in the Quota Movement, Bangladesh'
+      historyItem.className='bg-red border shadow h-20 mx-[200px] mt-2 p-3 rounded-xl'
+          historyItem.innerHTML = `
+              <h1 class=""></h1>
+              <p class="font-bold">${inputbtn} ${donate}</p>
+              
+          `
+         const container = document.getElementById('history-list')
+          container.appendChild(historyItem)
+
+
+
+
       const modal = document.getElementById('my_modal_5');
     modal.showModal(); 
    
    
 })
-
-
-
 
 
 //history-btn-here
@@ -84,7 +121,9 @@ history.classList.add('bg-[#B4F461]' ,'font-semibold', 'px-5', 'py-1', 'rounded-
    const donationbtn = document.getElementById('donationbtn')
    donationbtn.classList.remove('bg-[#B4F461]' ,'font-semibold', 'px-5', 'py-1', 'rounded-[8px]')
    document.getElementById('main').classList.add('hidden')
-   
+   document.getElementById('history-list').classList.remove('hidden');
+  
+
       
 })
 // donatin btn here
@@ -94,4 +133,9 @@ history.classList.add('bg-[#B4F461]' ,'font-semibold', 'px-5', 'py-1', 'rounded-
    const history =document.getElementById('history-btn')
 history.classList.remove('bg-[#B4F461]' ,'font-semibold', 'px-5', 'py-1', 'rounded-[8px]')
 document.getElementById('main').classList.remove('hidden')
+document.getElementById('history-list').classList.add('hidden');
+
+
+
+
 })

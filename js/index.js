@@ -1,14 +1,18 @@
+
+// js coomn function
+
+
+
 document.getElementById('donait-now-btn').addEventListener('click', function(even){
     even.preventDefault()
    const inputbtn = parseFloat(document.getElementById('input-btn').value)
    const mainblance = parseFloat(document.getElementById('main-blance').innerText)
    const updatedonate= parseFloat(document.getElementById('update-donate').innerText)
-   
    if(isNaN (inputbtn)){
     alert ('Invalid Input')
     return;
    }
-   else if(inputbtn < 0){
+   else if(inputbtn < 1){
     alert('Please enter a valid number.')
     return;
    }
@@ -22,7 +26,6 @@ document.getElementById('donait-now-btn').addEventListener('click', function(eve
     const donate = 'Taka Donate for Flood at Noakhali, Bangladesh'
     historyItem.className='bg-red border shadow max-sm:h-40 h-20 max-sm:mx-[70px] mx-[200px] mt-2 p-3 rounded-xl'
         historyItem.innerHTML = `
-            <h1 class=""></h1>
             <p class="font-bold">${inputbtn} ${donate}</p>
             <p class="text-gray-500">${new Date().toLocaleDateString()} ${new Date().toTimeString()}</p>
             
@@ -47,7 +50,7 @@ document.getElementById('donait-now-btn2').addEventListener('click', function(ev
     alert ('Invalid Input')
     return;
    }
-   else if(inputbtn < 0){
+   else if(inputbtn < 1){
     alert('Please enter a valid number.')
     return;
    }
@@ -59,7 +62,6 @@ document.getElementById('donait-now-btn2').addEventListener('click', function(ev
     const donate = ' Taka is Donated for Flood Relief in Feni,Bangladesh'
     historyItem.className='bg-red border shadow max-sm:h-40 h-20 max-sm:mx-[70px] mx-[200px] mt-2 p-3 rounded-xl'
         historyItem.innerHTML = `
-            <h1 class=""></h1>
             <p class="font-bold">${inputbtn} ${donate}</p>
             <p class="text-gray-500">${new Date().toLocaleDateString()} ${new Date().toTimeString()}</p>
         `
@@ -82,7 +84,7 @@ document.getElementById('donait-now-btn3').addEventListener('click', function(ev
     alert ('Invalid Input')
     return;
    }
-   else if(inputbtn < 0){
+   else if(inputbtn < 1){
     alert('Please enter a valid number.')
     return;
    }
@@ -91,24 +93,17 @@ document.getElementById('donait-now-btn3').addEventListener('click', function(ev
       document.getElementById('update-donate3').innerText= newblance
       document.getElementById('main-blance').innerText =loss
 
-      
-
       const historyItem =  document.createElement("div")
       const donate = ' Taka is Donated for Aid for Injured in the Quota Movement, Bangladesh'
       historyItem.className='bg-red border shadow max-sm:h-40 h-20 max-sm:mx-[70px] mx-[200px] mt-2 p-3 rounded-xl'
           historyItem.innerHTML = `
-              <h1 class=""></h1>
               <p class="font-bold">${inputbtn} ${donate}</p>
               <p class="text-gray-500">${new Date().toLocaleDateString()} ${new Date().toTimeString()}</p>
           `
-         const container = document.getElementById('history-list')
-          container.appendChild(historyItem)
-
-
-
-
-      const modal = document.getElementById('my_modal_5');
-    modal.showModal(); 
+           const container = document.getElementById('history-list')
+            container.appendChild(historyItem)
+           const modal = document.getElementById('my_modal_5');
+             modal.showModal(); 
    
    
 })
@@ -121,6 +116,7 @@ const history =document.getElementById('history-btn')
 history.classList.add('bg-[#B4F461]' ,'font-semibold', 'px-5', 'py-1', 'rounded-[8px]')
    const donationbtn = document.getElementById('donationbtn')
    donationbtn.classList.remove('bg-[#B4F461]' ,'font-semibold', 'px-5', 'py-1', 'rounded-[8px]')
+   donationbtn.classList.add('border','rounded-xl', 'text-bold')
    document.getElementById('main').classList.add('hidden')
    document.getElementById('history-list').classList.remove('hidden');
   
@@ -132,11 +128,11 @@ history.classList.add('bg-[#B4F461]' ,'font-semibold', 'px-5', 'py-1', 'rounded-
     const donationbtn = document.getElementById('donationbtn')
    donationbtn.classList.add('bg-[#B4F461]' ,'font-semibold', 'rounded-[8px]')
    const history =document.getElementById('history-btn')
-history.classList.remove('bg-[#B4F461]' ,'font-semibold', 'px-5', 'py-1', 'rounded-[8px]')
+history.classList.remove('bg-[#B4F461]' ,'font-semibold',   'rounded-[8px]')
+history.classList.add('border','rounded-xl', )
+
 document.getElementById('main').classList.remove('hidden')
 document.getElementById('history-list').classList.add('hidden');
-
-
 
 
 })

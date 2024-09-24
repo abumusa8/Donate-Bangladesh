@@ -1,11 +1,8 @@
 
-// js coomn function
-
-
-
 document.getElementById('donait-now-btn').addEventListener('click', function(even){
     even.preventDefault()
-   const inputbtn = parseFloat(document.getElementById('input-btn').value)
+//    const inputbtn = parseFloat(document.getElementById('input-btn').value)
+   const inputbtn = getValueByid('input-btn')
    const mainblance = parseFloat(document.getElementById('main-blance').innerText)
    const updatedonate= parseFloat(document.getElementById('update-donate').innerText)
    if(isNaN (inputbtn)){
@@ -25,8 +22,6 @@ document.getElementById('donait-now-btn').addEventListener('click', function(eve
    const loss =mainblance-inputbtn
       document.getElementById('update-donate').innerText= newblance
       document.getElementById('main-blance').innerText =loss
-
-
     const historyItem =  document.createElement("div")
     const donate = 'Taka Donate for Flood at Noakhali, Bangladesh'
     historyItem.className='bg-red border shadow max-sm:h-40 h-20 max-sm:mx-[70px] mx-[200px] mt-2 p-3 rounded-xl'
@@ -37,10 +32,8 @@ document.getElementById('donait-now-btn').addEventListener('click', function(eve
         `
        const container = document.getElementById('history-list')
         container.appendChild(historyItem)
-
-    const modal = document.getElementById('my_modal_5');
+        const modal = document.getElementById('my_modal_5');
     modal.showModal(); 
-
 })
 
 
@@ -48,7 +41,8 @@ document.getElementById('donait-now-btn').addEventListener('click', function(eve
 
 document.getElementById('donait-now-btn2').addEventListener('click', function(even){
     even.preventDefault()
-   const inputbtn = parseFloat(document.getElementById('input-btn2').value)
+//    const inputbtn = parseFloat(document.getElementById('input-btn2').value)
+       const inputbtn = getValueByid('input-btn2')
    const mainblance = parseFloat(document.getElementById('main-blance').innerText)
    const updatedonate= parseFloat(document.getElementById('update-donate2').innerText)
    if(isNaN (inputbtn)){
@@ -79,16 +73,15 @@ document.getElementById('donait-now-btn2').addEventListener('click', function(ev
        const container = document.getElementById('history-list')
         container.appendChild(historyItem)
       const modal = document.getElementById('my_modal_5');
-    modal.showModal(); 
-   
-   
+    modal.showModal();  
 })
 
 //donate 3 btn
 
 document.getElementById('donait-now-btn3').addEventListener('click', function(even){
     even.preventDefault()
-   const inputbtn = parseFloat(document.getElementById('input-btn3').value)
+//    const inputbtn = parseFloat(document.getElementById('input-btn3').value)
+       const inputbtn = getValueByid('input-btn3')
    const mainblance = parseFloat(document.getElementById('main-blance').innerText)
    const updatedonate= parseFloat(document.getElementById('update-donate3').innerText)
    if(isNaN (inputbtn)){
@@ -119,9 +112,7 @@ document.getElementById('donait-now-btn3').addEventListener('click', function(ev
            const container = document.getElementById('history-list')
             container.appendChild(historyItem)
            const modal = document.getElementById('my_modal_5');
-             modal.showModal(); 
-   
-   
+             modal.showModal();  
 })
 
 
@@ -136,7 +127,6 @@ history.classList.add('bg-[#B4F461]' ,'font-semibold', 'px-5', 'py-1', 'rounded-
    document.getElementById('main').classList.add('hidden')
    document.getElementById('history-list').classList.remove('hidden');
   
-
       
 })
 // donatin btn here
@@ -146,7 +136,6 @@ history.classList.add('bg-[#B4F461]' ,'font-semibold', 'px-5', 'py-1', 'rounded-
    const history =document.getElementById('history-btn')
 history.classList.remove('bg-[#B4F461]' ,'font-semibold',   'rounded-[8px]')
 history.classList.add('border','rounded-xl', )
-
 document.getElementById('main').classList.remove('hidden')
 document.getElementById('history-list').classList.add('hidden');
 

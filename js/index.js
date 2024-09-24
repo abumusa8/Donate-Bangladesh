@@ -14,8 +14,8 @@ document.getElementById('donait-now-btn').addEventListener('click', function(eve
    }
    const newblance = inputbtn+updatedonate
    const loss =mainblance-inputbtn
-      document.getElementById('update-donate').innerText= newblance.toFixed(2)
-      document.getElementById('main-blance').innerText =loss.toFixed(2)
+      document.getElementById('update-donate').innerText= newblance
+      document.getElementById('main-blance').innerText =loss
 
 
     const historyItem =  document.createElement("div")
@@ -24,6 +24,7 @@ document.getElementById('donait-now-btn').addEventListener('click', function(eve
         historyItem.innerHTML = `
             <h1 class=""></h1>
             <p class="font-bold">${inputbtn} ${donate}</p>
+            <p class="text-gray-500">${new Date().toLocaleDateString()} ${new Date().toTimeString()}</p>
             
         `
        const container = document.getElementById('history-list')
@@ -52,15 +53,15 @@ document.getElementById('donait-now-btn2').addEventListener('click', function(ev
    }
    const newblance = inputbtn+updatedonate
    const loss =mainblance-inputbtn
-      document.getElementById('update-donate2').innerText= newblance.toFixed(2)
-      document.getElementById('main-blance').innerText =loss.toFixed(2)
+      document.getElementById('update-donate2').innerText= newblance
+      document.getElementById('main-blance').innerText =loss
       const historyItem =  document.createElement("div")
     const donate = ' Taka is Donated for Flood Relief in Feni,Bangladesh'
     historyItem.className='bg-red border shadow h-20 mx-[200px] mt-2 p-3 rounded-xl'
         historyItem.innerHTML = `
             <h1 class=""></h1>
             <p class="font-bold">${inputbtn} ${donate}</p>
-            
+            <p class="text-gray-500">${new Date().toLocaleDateString()} ${new Date().toTimeString()}</p>
         `
        const container = document.getElementById('history-list')
         container.appendChild(historyItem)
@@ -87,8 +88,8 @@ document.getElementById('donait-now-btn3').addEventListener('click', function(ev
    }
    const newblance = inputbtn+updatedonate
    const loss =mainblance-inputbtn
-      document.getElementById('update-donate3').innerText= newblance.toFixed(2)
-      document.getElementById('main-blance').innerText =loss.toFixed(2)
+      document.getElementById('update-donate3').innerText= newblance
+      document.getElementById('main-blance').innerText =loss
 
       
 
@@ -98,7 +99,7 @@ document.getElementById('donait-now-btn3').addEventListener('click', function(ev
           historyItem.innerHTML = `
               <h1 class=""></h1>
               <p class="font-bold">${inputbtn} ${donate}</p>
-              
+              <p class="text-gray-500">${new Date().toLocaleDateString()} ${new Date().toTimeString()}</p>
           `
          const container = document.getElementById('history-list')
           container.appendChild(historyItem)

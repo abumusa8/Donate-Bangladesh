@@ -12,8 +12,13 @@ document.getElementById('donait-now-btn').addEventListener('click', function(eve
     alert ('Invalid Input')
     return;
    }
+
+  else if(mainblance < inputbtn){
+    alert ('Insufficient Balance')
+    return;
+   }
    else if(inputbtn < 1){
-    alert('Please enter a valid number.')
+    alert('Please enter a valid positive number.')
     return;
    }
    const newblance = inputbtn+updatedonate
@@ -50,8 +55,14 @@ document.getElementById('donait-now-btn2').addEventListener('click', function(ev
     alert ('Invalid Input')
     return;
    }
+
+   else if(mainblance < inputbtn){
+    alert ('Insufficient Balance')
+    return;
+   }
+
    else if(inputbtn < 1){
-    alert('Please enter a valid number.')
+    alert('Please enter a valid positive number.')
     return;
    }
    const newblance = inputbtn+updatedonate
@@ -84,8 +95,13 @@ document.getElementById('donait-now-btn3').addEventListener('click', function(ev
     alert ('Invalid Input')
     return;
    }
+
+   else if(mainblance < inputbtn){
+    alert ('Insufficient Balance')
+    return;
+   }
    else if(inputbtn < 1){
-    alert('Please enter a valid number.')
+    alert('Please enter a valid positive number.')
     return;
    }
    const newblance = inputbtn+updatedonate

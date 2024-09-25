@@ -27,7 +27,7 @@ document.getElementById('donait-now-btn').addEventListener('click', function(eve
     historyItem.className='bg-red border shadow max-sm:h-40 h-20 max-sm:mx-[20px]  mx-[200px] mt-2 p-3 rounded-xl'
         historyItem.innerHTML = `
             <p class="font-bold">${inputbtn} ${donate}</p>
-            <p class="text-gray-500">${new Date().toLocaleDateString()} ${new Date().toTimeString()}</p>
+            <p class="text-gray-500">${new Date().toString()} ${new Date().toTimeString()}</p>
             
         `
        const container = document.getElementById('history-list')
@@ -68,7 +68,7 @@ document.getElementById('donait-now-btn2').addEventListener('click', function(ev
     historyItem.className='bg-red border shadow max-sm:h-40 h-20 max-sm:mx-[20px] mx-[200px] mt-2 p-3 rounded-xl'
         historyItem.innerHTML = `
             <p class="font-bold">${inputbtn} ${donate}</p>
-            <p class="text-gray-500">${new Date().toLocaleDateString()} ${new Date().toTimeString()}</p>
+            <p class="text-gray-500">${new Date().toString()} ${new Date().toTimeString()}</p>
         `
        const container = document.getElementById('history-list')
         container.appendChild(historyItem)
@@ -107,7 +107,7 @@ document.getElementById('donait-now-btn3').addEventListener('click', function(ev
       historyItem.className='bg-red border shadow max-sm:h-40 h-20 max-sm:mx-[20px] mx-[200px] mt-2 p-3 rounded-xl'
           historyItem.innerHTML = `
               <p class="font-bold">${inputbtn} ${donate}</p>
-              <p class="text-gray-500">${new Date().toLocaleDateString()} ${new Date().toTimeString()}</p>
+              <p class="text-gray-500">${new Date().toString()} ${new Date().toTimeString()}</p>
           `
            const container = document.getElementById('history-list')
             container.appendChild(historyItem)
